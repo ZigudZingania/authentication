@@ -15,7 +15,7 @@ function App() {
 
   async function addUser() {
     await axios
-      .post("http://localhost:3000/add", {
+      .post("https://authentication-one-pi.vercel.app/add", {
         username: userName,
         password: password,
       })
@@ -31,7 +31,7 @@ function App() {
 
   async function checkPassword() {
     await axios
-      .post("http://localhost:3000/pass", {
+      .post("https://authentication-one-pi.vercel.app/pass", {
         password: password,
         username: userName,
       })
